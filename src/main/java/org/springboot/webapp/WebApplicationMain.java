@@ -16,7 +16,8 @@ import org.springframework.context.annotation.Configuration;
 public class WebApplicationMain {
 
     public static void main(String[] args) throws Exception {
-        SpringApplication.run(WebApplicationMain.class, args);
+        SpringApplication springApplication = new SpringApplication();
+        springApplication.run(WebApplicationMain.class,args);
     }
 
 }
